@@ -1,0 +1,34 @@
+;                                       +----------------------------------+
+;                                       | Assembly language for custom CPU |
+;                                       +----------------------------------+
+
+; Abbreviation | Data Bytes | OP Code
+
+; ---    Non-Instructions     ---
+  NOP            0            00
+
+; ---   Register Management   ---
+  LDA            1            01h
+  lda            2            02h
+  STA            2            03h
+  sta            2            04h
+  SAB            0            05h
+
+; ---    Jump Instructions    ---
+  JMP            2            06h
+  jmp            2            07h
+  JIZ            2            08h
+  jiz            2            09h
+
+; --- Mathematical Operations ---
+  ADD            0            0Ah
+  SUB            0            0Bh
+
+; ---   Logical Operations    ---
+  AND            0            0Ch
+  NOT            0            0Dh
+  OR             0            0Eh
+
+; ---        Rotations        ---
+  ROR            0            0Fh
+  ROL            0            10h
